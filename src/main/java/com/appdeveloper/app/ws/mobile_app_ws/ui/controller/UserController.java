@@ -35,7 +35,6 @@ public class UserController {
         UserDto userdto = new UserDto();
         BeanUtils.copyProperties(userDetails, userdto);
 
-        // Debugging the userdto object
         System.out.println("UserDto email: " + userdto.getEmail());
 
         UserDto createdUser = userService.createUser(userdto);
